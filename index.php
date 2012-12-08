@@ -4,7 +4,11 @@
 <body>
 
 <?php
-echo "<h1>It works!</h1>";
+echo "<h1>It works!</h1>";?>
+<nav>
+<?php
+include 'includes/menu.php';
 ?>
+</nav>
 </body>
 </html>
