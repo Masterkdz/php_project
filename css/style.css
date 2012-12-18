@@ -1,0 +1,43 @@
+/*couleurs :
+couleurs liens : #572deb
+boutons : #1127a6
+boutons enfonvés : #1132a6
+ */
+
+html{
+}
+
+body {
+	background-image: url("../img/dark_wall.png");
+	padding:2%;
+}
+
+nav ul{
+	float:left;
+	list-style: none;
+	padding:5px;
+	margin: 5px;
+}
+
+nav ul li {
+	padding: 7px;
+	border: 1px;
+	border-style: solid;
+}
+
+nav a {
+	color:white;
+	font-size: 1.4em;
+}
+
+nav a:visited {
+	color:white;
+}
+
+nav ul a:hover li{
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+h1 {color:red;}
