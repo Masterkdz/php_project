@@ -1,9 +1,13 @@
+<!doctype html>
 <html>
 <head>
 	<title>Inscription</title>
 </head>
 <body>
-	<?php if(!isset ($_POST['pseudo']) || !isset($_POST['motdepasse']) || !isset($_POST['motdepasse2']) || $_POST['motdepasse2']!=$_POST['motdepasse'] || $_POST['pseudo']=='' || $_POST['motdepasse']=='') { ?>
+	<?php 
+require_once("connect_login.php");
+
+	if(!isset ($_POST['pseudo']) || !isset($_POST['motdepasse']) || !isset($_POST['motdepasse2']) || $_POST['motdepasse2']!=$_POST['motdepasse'] || $_POST['pseudo']=='' || $_POST['motdepasse']=='') { ?>
 	<table border="0">
 	<form method="POST" action="pageinscription.php">
 		<tr>
@@ -30,7 +34,16 @@
 <?php
 }
 
-else echo 'inscription envoyée';
+else { //est exécuté si tous les chams sont remplis et le mot de passe et la confirmation correspondent
+	$pseudo=$_POST["pseudo"];
+	$motdepasse=hash("whirlpool",$_POST["motdepasse"]);
+	$email=$_POST["email"];
+	$sql="INSERT INTO identifiants VALUES ('', '$pseudo','$motdepasse','$email')";
+	$resultat=qdb($sql);
+
+	echo 'inscription envoyée';
+
+}
 
 ?>
 
