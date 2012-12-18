@@ -7,8 +7,6 @@ if (isset($_POST["motdepasse"])){
 else {
 	echo "Veuillez entrer un mot de passe<br>";
 	echo "<a href='pageinscription.php'><button>Retour</button></a>";
-	die ("test");
-
 }
 $motdepasse2=$_POST["motdepasse2"];
 $email=$_POST["email"];
