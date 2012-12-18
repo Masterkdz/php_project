@@ -3,6 +3,8 @@
 <head><title>Site du projet</title></head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="icon" type="image/png" href="/img/game_pad.png" />
+<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 <body>
 <nav>
 	<ul>
