@@ -16,6 +16,9 @@ body {
 	padding:2%;
 }
 
+nav {
+	margin-top: 30px;
+}
 nav ul{
 	float:left;
 	list-style: none;
@@ -61,6 +64,39 @@ p:before {
 	height: 50px;
 }
 
-p .erreur {
+.erreur {
 	color :red;
+}
+
+table tr td {
+	color:white;
+}
+table {
+	margin-top: 100px;
+}
+
+.centrer {
+	color:white;
+	text-align: center;
+	margin-top : 100px;
+}
+
+.bouton {
+	text-align: center;
+	background-color: white;
+	color:black;
+	padding: 7px;
+	border-radius: 999px;
+}
+
+.centrer a:hover{
+	background-color: red;
+}
+.centrer a:active{
+	background-color: blue;
+}
+
+.tablelogin {
+
+	margin-top : 0;
 }

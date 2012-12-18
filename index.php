@@ -6,16 +6,31 @@
 <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 <body>
+<a href="index.php"><img src="img/image_accueil.jpg" height="150" width="300"></a>
+<table align="right" class="tablelogin" border="0">
+		<form action="loginverif.php" method="post">
+		<tr>
+			<td>Pseudo : </td><td><input type="text" name="pseudo" placeholder="Votre pseudo"></td>
+		
+
+			<td>Mot de passe : </td><td><input name="motdepasse" type="password" placeholder="********"></td>
+		
+			<td><input type="submit" name="valider" value="Connexion"></td>
+		</tr>
+		</form>
+	</table>
 <nav>
 	<ul>
-		<a href='#'><li>Accueil</li></a>
-		<a href='#'><li>Nouveaut&eacute;s</li></a>
-		<a href='#'><li>Bestiaire</li></a>
-		<a href='#'><li>Boutique</li></a>
-		<a href='#'><li>Extras</li></a>
-		<a href='#'><li>Livre d'or</li></a>
-		<a href='#'><li>Contact</li></a>
+		<a href='index.php'><li><img src="img/testcaret.png">Accueil</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Nouveaut&eacute;s</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Bestiaire</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Boutique</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Extras</li></a>
+		<a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Contact</li></a>
+		<a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
 </nav>
+
 
 <?php
 echo "<h1>It works!</h1>";?>
