@@ -27,46 +27,34 @@
 		<a href='Boutique.html'><li><img src="img/testcaret.png">Boutique</li></a>
 		<a href='#'><li><img src="img/testcaret.png">Extras</li></a>
 		<a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
-		<a href='contact.html'><li><img src="img/testcaret.png">Contact</li></a>
+		<a href='#'><li><img src="img/testcaret.png">Contact</li></a>
 		<a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
 </nav>
 <html>
 <body>
-<p style="font-family:Commons; font-size:60; text-align:center ; color : white">    Boutique      </p>
+
+
+
+<p style="font-family:Commons; font-size:60; text-align:center ; color : white">    Contactez nous     </p>
+
+
+
+
+
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ; text-align:right"> De Zorzi Kevin   </p>
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ;text-align:right"> 06 09 69 08 71 </p>
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ;text-align:right"> kevin.dezorzi@hotmail.fr </p>
+
+
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ;text-align:left"> Doncourt Vincent </p>
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ;text-align:left"> 06 81 94 33 42 </p>
+<p style="font-family:Commons; font-size:20; text-align:center ; color : white ;text-align:left"> Vync@hotmail.fr </p>
+
+
+
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
-<?php
-
-require_once("connect_login.php");
-
-$pseudo=$_POST['pseudo'];
-$commentaire=$_POST['commentaire'];
-
-
-$sql="INSERT INTO livreor (id, pseudo, commentaire)
-VALUES ('','$pseudo$','$commentaire')";
-$resultat=qdb($sql);
-
-
-
-echo "<p style='text-align:left ;color : white'>"; echo"Votre commentaire a bien été ajouté";
-
-?>
-</br></br> 
-<a href="index.php" style="align-text:left">Retour a l'acceuil</a>
-
-
-
-
 
 
 

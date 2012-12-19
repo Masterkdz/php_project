@@ -1,5 +1,5 @@
 <html>
-<head><title>Livreor</title></head>
+<head><title>Boutique</title></head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="icon" type="image/png" href="/img/game_pad.png" />
 <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
@@ -27,46 +27,34 @@
 		<a href='Boutique.html'><li><img src="img/testcaret.png">Boutique</li></a>
 		<a href='#'><li><img src="img/testcaret.png">Extras</li></a>
 		<a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
-		<a href='contact.html'><li><img src="img/testcaret.png">Contact</li></a>
+		<a href='Contact.html'><li><img src="img/testcaret.png">Contact</li></a>
 		<a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
 </nav>
+
 <html>
-<body>
-<p style="font-family:Commons; font-size:60; text-align:center ; color : white">    Boutique      </p>
+
+<?php require_once("connect_db.php"); ?>
+
+
+<body style="margin-top:1px">
+
+
+<p style="font-family:Commons; font-size:60 ; text-align:center ; color : white ; margin-top:0px">    Boutique      </p>
+<form action="boutique.php" method="POST">
+
+<p  style="font-family:Commons;  text-align:center ;color : white"> Nom                      <input type="text" name="nom"> </p>
+<p  style="font-family:Commons; text-align:center ;color : white">Prenom                   <input type="text" name="prenom">
+
+<p  style="font-family:Commons; text-align:center ;color : white">Ajoutez le nombre de T-shirt choisis :
+<p  style="font-family:Commons; text-align:center ;color : white">T-shirtHill                <input type="text" name="TA">
+<p  style="font-family:Commons; text-align:center ;color : white">T-shirtGears               <input type="text" name="TB">
+<p  style="font-family:Commons; text-align:center ;color : white">T-shirtWar                 <input type="text" name="TC">
+<p  style="font-family:Commons; text-align:center ;color : white">T-shirtEvil                <input type="text" name="TD"> </br></br>
+
+<input type="submit" value="ajouter">
+<input type="reset" Value="Réinitialiser">
+</form>
+
+
+
 </html>
-
-
-
-
-
-
-
-
-
-
-<?php
-
-require_once("connect_login.php");
-
-$pseudo=$_POST['pseudo'];
-$commentaire=$_POST['commentaire'];
-
-
-$sql="INSERT INTO livreor (id, pseudo, commentaire)
-VALUES ('','$pseudo$','$commentaire')";
-$resultat=qdb($sql);
-
-
-
-echo "<p style='text-align:left ;color : white'>"; echo"Votre commentaire a bien été ajouté";
-
-?>
-</br></br> 
-<a href="index.php" style="align-text:left">Retour a l'acceuil</a>
-
-
-
-
-
-
-

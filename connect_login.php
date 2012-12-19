@@ -4,7 +4,7 @@
 $dbhost="localhost";
 $dbuser="root";
 $dbpassword="";
-$dbname="projet1";
+$dbname="projet";
 
 
 //Tous les éléments nécessaires à la connexion sont mis dans une fonction

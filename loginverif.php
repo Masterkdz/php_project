@@ -26,11 +26,11 @@
   <ul>
     <a href='index.php'><li><img src="img/testcaret.png">Accueil</li></a>
     <a href='#'><li><img src="img/testcaret.png">Nouveaut&eacute;s</li></a>
-    <a href='#'><li><img src="img/testcaret.png">Bestiaire</li></a>
-    <a href='#'><li><img src="img/testcaret.png">Boutique</li></a>
+    <a href='Bestiaires.html'><li><img src="img/testcaret.png">Bestiaire</li></a>
+    <a href='boutique.html'><li><img src="img/testcaret.png">Boutique</li></a>
     <a href='#'><li><img src="img/testcaret.png">Extras</li></a>
     <a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
-    <a href='#'><li><img src="img/testcaret.png">Contact</li></a>
+    <a href='contact.html'><li><img src="img/testcaret.png">Contact</li></a>
     <a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
 </nav>
 <?php
@@ -43,7 +43,7 @@ $motdepasse=hash("whirlpool","$motdepasse");
  $query = mysql_query($sql);
  
  
-  if ( mysql_num_rows($query) === 1 ) {
+  if ( mysql_num_rows($query)===1 ) {
        echo "<table  align='center' border='0'><tr><td>Authentification reussie</td></tr>";
        echo "<tr><th><a href='index.php'><button>Retour a l'accueil</button></a></th></tr></table>";
        //$pseudo=$_SESSION["pseudo"];

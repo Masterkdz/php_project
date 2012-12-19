@@ -26,31 +26,21 @@
 	<ul>
 		<a href='index.php'><li><img src="img/testcaret.png">Accueil</li></a>
 		<a href='#'><li><img src="img/testcaret.png">Nouveaut&eacute;s</li></a>
-		<a href='#'><li><img src="img/testcaret.png">Bestiaire</li></a>
-		<a href='#'><li><img src="img/testcaret.png">Boutique</li></a>
+		<a href='Bestiaires.html'><li><img src="img/testcaret.png">Bestiaire</li></a>
+		<a href='boutique.html'><li><img src="img/testcaret.png">Boutique</li></a>
 		<a href='#'><li><img src="img/testcaret.png">Extras</li></a>
 		<a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
-		<a href='#'><li><img src="img/testcaret.png">Contact</li></a>
+		<a href='contact.html'><li><img src="img/testcaret.png">Contact</li></a>
 		<a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
 </nav>
 
 	<h1>Bienvenue sur notre Livre D'or! </h1>
 		<table>
-			<form action="insert_livre.php" method="post">
-				<tr>
-					<td>Commentaire : </td>
-					<td rowspan="2"><TEXTAREA name="commentaire" placeholder="Votre commentaire..." cols="30" rows="5">
-					</TEXTAREA></td>
-				</tr>
-				<tr>
-					<td>&nbsp;</td>
-				</tr>
-				<tr>
-					<th colspan="2"><input type="submit" name="envoyer" value="Ajouter"></th>
-				</tr>
-			</form>
-		</table>
-
+			<form action="livreor.php" method="post">
+<p  style="font-family:Commons; text-align:center ;color : white"> Pseudo      : <input type="text" name="pseudo"> 
+<p  style="font-family:Commons; text-align:center ;color : white"> Commentaire : <TEXTAREA name="commentaire" placeholder="Votre commentaire...">
+</TEXTAREA></br>
+<input type="submit" value="Ajouter">
 
 </body>
 </html>

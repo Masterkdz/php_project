@@ -1,5 +1,5 @@
 <html>
-<head><title>Livreor</title></head>
+<head><title>Boutique</title></head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="icon" type="image/png" href="/img/game_pad.png" />
 <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
@@ -29,44 +29,35 @@
 		<a href='livreor.htm'><li><img src="img/testcaret.png">Livre d'or</li></a>
 		<a href='contact.html'><li><img src="img/testcaret.png">Contact</li></a>
 		<a href='pageinscription.php'><li><img src="img/testcaret.png">Inscrivez-vous</li></a>
-</nav>
-<html>
+</nav><html>
 <body>
-<p style="font-family:Commons; font-size:60; text-align:center ; color : white">    Boutique      </p>
+<p style="font-family:Commons; font-size:60 ;text-align:center ; color : white">    Boutique      </p>
 </html>
-
-
-
-
-
-
 
 
 
 
 <?php
 
-require_once("connect_login.php");
-
-$pseudo=$_POST['pseudo'];
-$commentaire=$_POST['commentaire'];
-
-
-$sql="INSERT INTO livreor (id, pseudo, commentaire)
-VALUES ('','$pseudo$','$commentaire')";
-$resultat=qdb($sql);
 
 
 
-echo "<p style='text-align:left ;color : white'>"; echo"Votre commentaire a bien été ajouté";
+$carte=$_POST['carte'] ;
+
+
+
+
+
+echo "<p style='text-align:left ;color : white'>"; echo "Vous avez choisis la carte $carte , entrez votre numéro de carte ";
+
+echo '<form action="boutique3.php" method="POST">' ;
+
+
+echo "<p style='text-align:left ;color : white'>"; echo "Numero de carte"; echo'<input type="text" name="cartebleu">'; echo "</br>"; echo "</br>";
+echo'<input type="submit" value="Envoyer">';
+echo '</form>';
+   echo "<p style='text-align:left ;color : white'>" ; echo"Cocher votre mode de payement" ;
+
+
 
 ?>
-</br></br> 
-<a href="index.php" style="align-text:left">Retour a l'acceuil</a>
-
-
-
-
-
-
-
