@@ -1,3 +1,9 @@
+
+<?php
+require_once("connect_login.php");
+include("entete.php");
+include("menu.php");
+?>
 <html>
 <head>
 	<title>Page de connexion</title>

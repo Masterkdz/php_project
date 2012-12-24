@@ -1,14 +1,10 @@
-<!doctype html>
 <html>
-<head>
+<head><title>Inscription</title></head>
 
-	<title>Inscription</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="icon" type="image/png" href="/img/game_pad.png" />
-</head>
-<body>
 	<?php 
 require_once("connect_login.php");
+include("entete.php");
+include("menu.php");
 
 	if(!isset($_POST['email']) || !isset ($_POST['pseudo']) || !isset($_POST['motdepasse']) || !isset($_POST['motdepasse2']) || $_POST['motdepasse2']!=$_POST['motdepasse'] || $_POST['pseudo']=='' || $_POST['motdepasse']=='' || $_POST['email']=='') { ?>
 	<table>
