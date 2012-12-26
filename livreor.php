@@ -10,7 +10,7 @@ $commentaire=$_POST['commentaire'];
 
 
 $sql="INSERT INTO livreor (id, pseudo, commentaire)
-VALUES ('','$pseudo$','$commentaire')";
+VALUES ('','$pseudo','$commentaire')";
 $resultat=qdb($sql);
 
 
