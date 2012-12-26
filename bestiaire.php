@@ -1,5 +1,5 @@
 <?php
-require_once("connect_login");
+require_once("connect_login.php");
 include("session_start.php");
 include("entete.php");
 include("menu.php");
@@ -24,7 +24,7 @@ $_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']+5;
     echo "<a href='bestiaire.php'>Page précédente </a>";
 }
 
-}
+
 /* if($_SESSION)['pagebestiaire']</*mysql : compter le nb d'entrées dans la table articlesbestaire  {
 	echo "<a href'bestiaire.php'>Page suivante.</a>"
 	} */
