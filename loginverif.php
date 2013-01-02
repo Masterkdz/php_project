@@ -27,7 +27,7 @@ $motdepasse=hash("whirlpool","$motdepasse");
       include("entete.php");
       include("menu.php");
        echo "<p class='p1'>login incorrect</p>"; 
-       echo "<p class='centrer'><a href='index.php' class='bouton'>Reessayez</a></p>";
+       echo "<p class='centrer'><a href='login.php' class='bouton'>Reessayez</a></p>";
        
   }
  ?>

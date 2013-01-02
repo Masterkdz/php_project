@@ -23,7 +23,7 @@ echo" <body style='margin-top:1px'>
 <p  style='font-family:Commons; text-align:center ;color : white'>T-shirtEvil                <input type='text' name='TD'> </br></br>
 
 <input type='submit' value='ajouter'>
-<input type='reset' Value='Réinitialiser'>
+<input type='reset' Value='R&eacute;initialiser'>
 </form>";
 ?>
 
