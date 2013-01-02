@@ -2,7 +2,7 @@
 <head><title>Identification</title></head>
 
 <?php
-include("menu.php");
+//include("menu.php");
 require_once("connect_login.php");
 require_once("session_start.php");
 
@@ -15,15 +15,19 @@ $motdepasse=hash("whirlpool","$motdepasse");
  
  
   if ( mysql_num_rows($query)===1 ) {
-       $_SESSION["pseudo"]=$pseudo;
+        $_SESSION["pseudo"]=$pseudo;
        $_SESSION["motdepasse"]=$motdepasse;
-       echo "Authentification reussie";
-       echo "<a href='index.php'><button>Retour a l'accueil</button></a>";
-      include("entete.php");
+        include("entete.php");
+        include("menu.php");
+       echo "<p class='p1'>Authentification reussie</p>";
+       echo "<p class='centrer'><a href='index.php' class='bouton'>Retour a l'accueil</a>";
+      
   }
    else {
-       echo 'login incorrect'; 
-       echo "<p><a href='login.php'><button>Reessayez</button></a></p>";
-       include("entete.php");
+      include("entete.php");
+      include("menu.php");
+       echo "<p class='p1'>login incorrect</p>"; 
+       echo "<p class='centrer'><a href='index.php' class='bouton'>Reessayez</a></p>";
+       
   }
  ?>

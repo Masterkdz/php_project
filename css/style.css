@@ -82,6 +82,7 @@ table {
 }
 
 .bouton {
+	border-style:inset;
 	text-align: center;
 	background-color: white;
 	color:black;
@@ -96,6 +97,13 @@ table {
 	background-color: blue;
 }
 
+.bouton a:hover{
+	background-color: red;
+}
+.bouton a:active{
+	background-color: blue;
+}
+
 .tablelogin {
 
 	margin-top : 0;
@@ -106,4 +114,8 @@ table {
 }
 .imgaccueil{
 	float:left;
+}
+.p1 {
+	text-align:center;
+	color:white;
 }
