@@ -19,13 +19,14 @@ else{
 	$titre=$_POST["titre"];
 	$article=$_POST["article"];
 	$typearticle=$_POST["typearticle"];
-	echo "<p class='centrer'>Article enregistr&eacute; ! </p>";
-	if ($typearticle="bestiaire"){
-		$sql="INSERT INTO articlesbestiaire VALUES ('','$titre','$article')";
-		$resultat=qdb($sql);
-	}
-	else{
+	if ($typearticle="nouveautes"){
 		$sql="INSERT INTO articlesnouveautes VALUES ('','$titre','$article')";
 		$resultat=qdb($sql);
 	}
+	else{
+		$sql="INSERT INTO articlesbestiaire VALUES ('','$titre','$article')";
+		$resultat=qdb($sql);
+	}
+	echo "<p class='centrer'>Article enregistr&eacute; ! </p>";
+	
 }
