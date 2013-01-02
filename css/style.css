@@ -100,3 +100,7 @@ table {
 
 	margin-top : 0;
 }
+div.login {
+	color:white;
+	float:right;
+}

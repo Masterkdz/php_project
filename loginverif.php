@@ -18,8 +18,8 @@ $motdepasse=hash("whirlpool","$motdepasse");
   if ( mysql_num_rows($query)===1 ) {
        $_SESSION["pseudo"]=$pseudo;
        $_SESSION["motdepasse"]=$motdepasse;
-       echo "<table  align='center' border='0'><tr><td>Authentification reussie</td></tr>";
-       echo "<tr><th><a href='index.php'><button>Retour a l'accueil</button></a></th></tr></table>";
+       echo "Authentification reussie";
+       echo "<a href='index.php'><button>Retour a l'accueil</button></a>";
       include("entete.php");
   }
    else {

@@ -2,21 +2,21 @@
 require_once("connect_login.php");
 require_once("session_start.php");
 if (isset($_SESSION['pseudo']) && isset($_SESSION['motdepasse'])){
-	echo "<table align='right' class='tablelogin' border='0' >
-	<tr><th>Bienvenue ".$_SESSION['pseudo']."</th><td><a href='deconnexion.php'>Deconnexion</a></td></tr></table>";
+	echo "
+	Bienvenue ".$_SESSION['pseudo']."<a href='deconnexion.php'>Deconnexion</a>";
 }
 else {
-	echo "<table align='right' class='tablelogin' border='0'>
+	echo "<div class='login'>
 		<form action='loginverif.php' method='post'>
-		<tr>
-			<td>Pseudo : </td><td><input type='text' name='pseudo' placeholder='Votre pseudo'></td>
+		
+			Pseudo : <input type='text' name='pseudo' placeholder='Votre pseudo'>
 		
 
-			<td>Mot de passe : </td><td><input name='motdepasse' type='password' placeholder='********'></td>
+			Mot de passe : <input name='motdepasse' type='password' placeholder='********'>
 		
-			<td><input type='submit' name='valider' value='Connexion'></td>
-		</tr>
+			<input type='submit' name='valider' value='Connexion'>
+		
 		</form>
-	</table>";
+	</div>";
 }
 ?>
