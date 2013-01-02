@@ -100,7 +100,10 @@ table {
 
 	margin-top : 0;
 }
-div.login {
+.login {
 	color:white;
 	float:right;
+}
+.imgaccueil{
+	float:left;
 }

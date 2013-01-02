@@ -5,7 +5,8 @@
 <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 <body>
 
-<a href="index.php"><img src="img/image_accueil.jpg" height="150" width="300"></a>
+
+	<a href="index.php"><img src="img/image_accueil.jpg" height="150" width="300"></a>
 <?php
 include("session.php");
 ?>

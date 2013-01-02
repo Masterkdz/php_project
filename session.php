@@ -2,8 +2,8 @@
 require_once("connect_login.php");
 require_once("session_start.php");
 if (isset($_SESSION['pseudo']) && isset($_SESSION['motdepasse'])){
-	echo "
-	Bienvenue ".$_SESSION['pseudo']."<a href='deconnexion.php'>Deconnexion</a>";
+	echo "<div class='login'>
+	Bienvenue ".$_SESSION['pseudo']."&nbsp;&nbsp;&nbsp;&nbsp;<a href='deconnexion.php'>Deconnexion</a></div>";
 }
 else {
 	echo "<div class='login'>

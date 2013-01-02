@@ -2,7 +2,6 @@
 <head><title>Identification</title></head>
 
 <?php
-
 include("menu.php");
 require_once("connect_login.php");
 require_once("session_start.php");
