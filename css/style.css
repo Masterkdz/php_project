@@ -109,7 +109,9 @@ table {
 	margin-top : 0;
 }
 .login {
+	display: inline-block;
 	color:white;
+	padding-top: 50px;
 	float:right;
 }
 .imgaccueil{
