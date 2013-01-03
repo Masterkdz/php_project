@@ -1,3 +1,4 @@
+<title>Cr&eacute;ation d'articles</title>
 <?php
 require_once("connect_login.php");
 include("entete.php");
