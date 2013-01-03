@@ -21,11 +21,11 @@ else{
 	$titre=$_POST["titre"];
 	$article=$_POST["article"];
 	$typearticle=$_POST["typearticle"];
-	if ($typearticle="nouveautes"){
+	if ($typearticle=="nouveautes"){
 		$sql="INSERT INTO articlesnouveautes VALUES ('','$titre','$article')";
 		$resultat=qdb($sql);
 	}
-	else{
+	elseif($typearticle=="bestiaire"){
 		$sql="INSERT INTO articlesbestiaire VALUES ('','$titre','$article')";
 		$resultat=qdb($sql);
 	}
