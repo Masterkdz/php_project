@@ -6,6 +6,7 @@ include("menu.php");
 if(!isset($_SESSION['pagebestiaire'])){
 	$_SESSION['pagebestiaire']=1;
 	$_SESSION['typearticle']='articlesbestiaire'; //le type d'article qui sera demander par la requete SQL de article.php
+	echo "pagebestiaire=1";
 }
 
 for($i=$_SESSION['pagebestiaire'];$i<$_SESSION['pagebestiaire']+4;$i++){
@@ -21,8 +22,8 @@ echo $row["titre"];
 
 $_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']+4;
 	if ($_SESSION['pagebestiaire']>1){
-    if($_SESSION['pagebestiaire']>4){
-    $_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']-4;}
+    	if($_SESSION['pagebestiaire']>4){
+    		$_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']-4;}
     else {$_SESSION['pagebestiaire']=1;}
     echo "<a href='bestiaire.php'>Page pr&eacute;c&eacute;dente </a>";
 }
