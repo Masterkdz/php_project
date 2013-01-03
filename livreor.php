@@ -17,6 +17,7 @@ $resultat=qdb($sql);
 
 echo "<p class='p1'>"; echo"Votre commentaire a bien &eacute;t&eacute; ajout&eacute;</p>";
 echo "<p class='centrer'><a href='index.php' class='bouton'>Retour a l'acceuil</a></p>";
+
 ?>
 
 
