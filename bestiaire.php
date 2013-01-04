@@ -11,11 +11,11 @@ if(!isset($_SESSION['pagebestiaire'])){
 
 for($i=$_SESSION['pagebestiaire'];$i<$_SESSION['pagebestiaire']+4;$i++){
 	echo "<a href=article.php?id=".$i.">"; 
-	$sql="SELECT titre FROM articlesbestaire WHERE id = $i ";
-	$query=mysql_query($sql);
-	while ($row = mysql_fetch_assoc($query)) {
-echo $row["titre"];
-}
+	$sql="SELECT titre FROM articlesbestiaire WHERE id =$i";
+	$resultat=qdb($sql);
+	while ($row = mysql_fetch_assoc($resultat)) {
+		echo $row["titre"]; 
+	}
 	// mysql : titre de l'article (+photo) (l'id de l'article est $i)
 	echo "<br/>";
 }
