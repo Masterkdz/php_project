@@ -97,17 +97,17 @@ table {
 }
 
 .centrer a:hover{
-	background-color: red;
+	background-color: #1127a6;
 }
 .centrer a:active{
-	background-color: blue;
+	background-color: #1132a6;
 }
 
 .bouton a:hover{
-	background-color: red;
+	background-color: #1127a6;
 }
 .bouton a:active{
-	background-color: blue;
+	background-color: #1132a6;
 }
 
 .tablelogin {
@@ -130,7 +130,7 @@ table {
 
 .article{
 	border-left: 3px solid white;
-	margin-left:185px;
+	margin-left:250px;
 	padding-left: 7px;
 }
 
@@ -148,7 +148,7 @@ table {
 	background: black;}
 
 a{
-	color:white;
+	color:#572deb;
 }
 
 a[title]{

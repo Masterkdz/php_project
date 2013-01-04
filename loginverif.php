@@ -20,7 +20,7 @@ if(isset($_POST["pseudo"]) && isset($_POST["motdepasse"]) && $_POST["pseudo"]!="
          $_SESSION["motdepasse"]=$motdepasse;
           include("entete.php");
           include("menu.php");
-         echo "<p class='p1'>Authentification reussie</p>";
+         echo "<p class='centrer'>Authentification reussie</p>";
          echo "<p class='centrer'><a href='index.php' class='bouton'>Retour a l'accueil</a>";
         
     }
