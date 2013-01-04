@@ -53,8 +53,9 @@ h1 {
 }
 
 p {
+	color:ivory;
 	margin-right: 15%;
-	padding-left: 200px;
+	padding-left: 300px;
 }
 
 p:before {
@@ -121,3 +122,12 @@ table {
 	text-align:center;
 	color:white;
 }
+.par{
+	clear: both;
+	position: absolute;
+	margin-top :10px;
+	margin-left: 250px;
+	height: 200px;
+	width : 5px;
+	background: black;
+	}
