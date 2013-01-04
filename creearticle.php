@@ -6,14 +6,14 @@ include("menu.php");
 if (isset($_SESSION['pseudo']) && $_SESSION["pseudo"]=="Admin2"){
 	if (!isset($_POST['titre']) || !isset($_POST['article'])){?>
 	<form method="POST" action="creearticle.php">
-		<p class="p1">Type de l'article : <br><input type="radio" name="typearticle" value="bestiaire">Bestiaire<br>
-									<input type="radio" name="typearticle" value="nouveautes">Nouveaut&eacute;s<br>
-		</p>
-		<p class="p1">Titre : <input type="text" name="titre" placeholder="Titre de l'article"></p>
-		<p class="p1">Article : <TEXTAREA name="article" placeholder="Votre Article...">
-		</TEXTAREA></p>
-		<p class="p1"><input type="submit" name="enregistrer" value="enregistrer"></p>
-		NB: inclure le code HTML lors de la r&eacute;daction de l'article
+		<div class="article"><h3>Type de l'article : </h3><br><input type="radio" name="typearticle" value="bestiaire"><div class="p1">Bestiaire</div><br>
+									<input type="radio" name="typearticle" value="nouveautes"><div class="p1">Nouveaut&eacute;s</div><br><br><br>
+		
+		<div class="p1">Titre : <br><input type="text" name="titre" placeholder="Titre de l'article"></div><br><br>
+		<div class="p1">Article : <br><TEXTAREA name="article" rows="25" cols="100">
+		</TEXTAREA></div><br><br><br>
+		<div class="p1"><input type="submit" name="enregistrer" value="enregistrer">
+		(NB: inclure le code HTML lors de la r&eacute;daction de l'article)</div></div>
 	</form>
 
 <?php
