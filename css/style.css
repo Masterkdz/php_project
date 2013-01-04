@@ -83,6 +83,7 @@ table {
 	color:white;
 	text-align: center;
 	margin-top : 100px;
+	text-decoration: underline;
 }
 
 .bouton {
@@ -130,4 +131,18 @@ table {
 	border-left: 3px solid white;
 	margin-left:185px;
 	padding-left: 7px;
+}
+
+.bestiaire{
+	font-size: 1.5em;
+	color:white;
+	text-decoration: none;
+}
+
+a{
+	color:white;
+}
+
+a[title]{
+	color:rgb(195,195,195);
 }
