@@ -6,7 +6,7 @@ include("menu.php");
 if(!isset($_SESSION['pagebestiaire'])){
 	$_SESSION['pagebestiaire']=1;
 	$_SESSION['typearticle']='articlesbestiaire'; //le type d'article qui sera demander par la requete SQL de article.php
-	echo "pagebestiaire=1";
+	
 }
 
 for($i=$_SESSION['pagebestiaire'];$i<$_SESSION['pagebestiaire']+4;$i++){

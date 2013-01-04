@@ -3,7 +3,8 @@
 require_once("connect_login.php");
 include("entete.php");
 include("menu.php");
-if (!isset($_POST['titre']) || !isset($_POST['article'])){?>
+if (isset($_SESSION['pseudo']) && $_SESSION["pseudo"]=="Admin2"){
+	if (!isset($_POST['titre']) || !isset($_POST['article'])){?>
 	<form method="POST" action="creearticle.php">
 		<p class="p1">Type de l'article : <br><input type="radio" name="typearticle" value="bestiaire">Bestiaire<br>
 									<input type="radio" name="typearticle" value="nouveautes">Nouveaut&eacute;s<br>
@@ -32,3 +33,9 @@ else{
 	echo "<p class='centrer'>Article enregistr&eacute; ! </p>";
 	
 }
+}
+else{
+	echo "<p class='centrer'>Vous n'avez pas les droits d'acc&eacute;der &agrave; cette page.</p>";
+
+}
+?>
