@@ -9,7 +9,7 @@ if(!isset($_SESSION['pagenouveautes'])){
 	$_SESSION['typearticle']='articlesnouveautes'; //le type d'article qui sera demander par la requete SQL de article.php
 	
 }
-
+$_SESSION['typearticle']='articlesnouveautes';
 for($i=$_SESSION['pagenouveautes'];$i<$_SESSION['pagenouveautes']+4;$i++){
 	echo "<a href=article.php?id=".$i.">"; 
 	$sql="SELECT titre FROM articlesnouveautes WHERE id =$i";

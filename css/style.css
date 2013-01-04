@@ -137,7 +137,6 @@ table {
 .bestiaire{
 	font-size: 1.5em;
 	color:white;
-<<<<<<< HEAD
 }
 .par{
 	clear: both;
@@ -146,11 +145,7 @@ table {
 	margin-left: 250px;
 	height: 200px;
 	width : 5px;
-	background: black;
-	}
-=======
-	text-decoration: none;
-}
+	background: black;}
 
 a{
 	color:white;
@@ -159,4 +154,3 @@ a{
 a[title]{
 	color:rgb(195,195,195);
 }
->>>>>>> 99b2aa5544fc28c3cfb08022366b6b5f7c5ad2cd
