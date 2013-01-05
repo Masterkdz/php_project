@@ -3,17 +3,16 @@
 require_once("connect_login.php");
 include("entete.php");
 include("menu.php");
-if (isset($_SESSION['pseudo']) && $_SESSION["pseudo"]=="Admin2"){
+if (isset($_SESSION['statut']) && $_SESSION["statut"]=="admin"){
 	if (!isset($_POST['titre']) || !isset($_POST['article'])){?>
 	<form method="POST" action="creearticle.php">
-		<h3>Type de l'article : </h3><br><div class="article"><input type="radio" name="typearticle" value="bestiaire"><div class="p1">Bestiaire</div><br>
+		<h3>Cr&eacute;ation d'articles : </h3><br><div class="article"><div class='p1'>Type d'article : <br><input type="radio" name="typearticle" value="bestiaire">Bestiaire</div><br>
 									<input type="radio" name="typearticle" value="nouveautes"><div class="p1">Nouveaut&eacute;s</div><br><br><br>
 		
 		<div class="p1">Titre : <br><input type="text" name="titre" placeholder="Titre de l'article"></div><br><br>
-		<div class="p1">Article : <br><TEXTAREA name="article" rows="25" cols="100">
-		</TEXTAREA></div><br><br><br>
+		<div class="p1">Article : <br><TEXTAREA name="article" rows="25" cols="100"placeholder="R&eacute;diger votre article ici..."></textarea></div><br><br><br>
 		<div class="p1"><input type="submit" name="enregistrer" value="enregistrer">
-		(NB: inclure le code HTML lors de la r&eacute;daction de l'article)</div></div>
+		(NB: inclure le code HTML lors de la r&eacute;daction de l'article et utiliser uniquement des double quotes)</div></div>
 	</form>
 
 <?php
