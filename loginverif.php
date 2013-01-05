@@ -27,7 +27,7 @@ if(isset($_POST["pseudo"]) && isset($_POST["motdepasse"]) && $_POST["pseudo"]!="
      else {
         include("entete.php");
         include("menu.php");
-         echo "<p class='p1'>login incorrect</p>"; 
+         echo "<p class='centrer'>login incorrect</p>"; 
          echo "<p class='centrer'><a href='login.php' class='bouton'>Reessayez</a></p>";
          
      }

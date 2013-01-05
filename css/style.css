@@ -86,6 +86,11 @@ table {
 	margin-top : 100px;
 	text-decoration: underline;
 }
+.centrer2 {
+	color:white;
+	text-align: center;
+	margin-top : 100px;
+}
 
 .bouton {
 	border-style:inset;
@@ -94,6 +99,9 @@ table {
 	color:black;
 	padding: 7px;
 	border-radius: 999px;
+}
+.bouton2 {
+	text-align: center;
 }
 
 .centrer a:hover{
@@ -133,9 +141,15 @@ table {
 	margin-left:250px;
 	padding-left: 7px;
 }
+.classgen{
+	margin-left:500px;
+	padding-left: 7px;
+	color:white;
+	margin-top:100px;
+}
 
-.bestiaire{
-	font-size: 1.5em;
+.bestiaire {
+	font-size: 14px;
 	color:white;
 }
 .par{
@@ -153,4 +167,9 @@ a{
 
 a[title]{
 	color:rgb(195,195,195);
+}
+.aligntop {
+	margin-top:100px;
+	margin-left:500px;
+
 }

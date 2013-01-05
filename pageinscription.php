@@ -6,6 +6,8 @@ require_once("connect_login.php");
 include("entete.php");
 include("menu.php");
 
+
+
 	if(!isset($_POST['email']) || !isset ($_POST['pseudo']) || !isset($_POST['motdepasse']) || !isset($_POST['motdepasse2']) || $_POST['motdepasse2']!=$_POST['motdepasse'] || $_POST['pseudo']=='' || $_POST['motdepasse']=='' || $_POST['email']=='') { ?>
 	<table>
 	<form method="POST" action="pageinscription.php">
@@ -14,6 +16,7 @@ include("menu.php");
 				if (isset($_POST['pseudo']) && $_POST['pseudo']=='') {
 					echo '<tr><td class="erreur">Veuillez renseigner un pseudo</td></tr>';
 				}
+
 			?>
 			<td>Choisissez un pseudo : </td>
 			

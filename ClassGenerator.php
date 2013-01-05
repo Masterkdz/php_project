@@ -84,37 +84,37 @@ if ($g!=0 && $e>3){
 while ($b==4 && $d==$i){
 	$i=mt_rand(0,21);
 }
-
+echo "<div class='classgen'>";
 //Si surarmement
 if ($b==4){
-	echo "Arme Principale : ".$principale[$d]."<br>";
-	echo "Accessoire : ".$accessoire1[$f]."<br><br>";
+	echo "<font color=green>Arme Principale :</font> ".$principale[$d]."<br>";
+	echo "<font color=blue>Accessoire :</font> ".$accessoire1[$f]."<br><br>";
 	
 	$f=mt_rand(0,5);
 	
-	echo "Arme Secondaire : ".$principale[$i]."<br>";
-	echo "Accessoire : ".$accessoire1[$f]."<br><br>";
+	echo "<font color=green>Arme Secondaire : </font>".$principale[$i]."<br>";
+	echo "<font color=blue>Accessoire :</font> ".$accessoire1[$f]."<br><br>";
 }
 else {
-	echo "Arme Principale : ".$principale[$d]."<br>";
-	echo "Accessoire : ".$accessoire1[$f]."<br><br>";
-	echo "Arme Secondaire : ".$secondaire[$e]."<br>";
-	echo "Accessoire : ".$accessoire2[$g]."<br><br>";
+	echo "<font color=green>Arme Principale : </font>".$principale[$d]."<br>";
+	echo "<font color=blue>Accessoire :</font> ".$accessoire1[$f]."<br><br>";
+	echo "<font color=green>Arme Secondaire : </font>".$secondaire[$e]."<br>";
+	echo "<font color=blue>Accessoire :</font> ".$accessoire2[$g]."<br><br>";
 }
 
 //Si poignée ou LG
 if ($f==0 || $f==3){
-	echo "Atout 1 : Pas d'atout 1 <br>";
-	echo "Atout 2 : ".$atout2[$b]."<br>";
-	echo "Atout 3 : ".$atout3[$c]."<br><br>";
+	echo "<font color=#C01515 >Atout 1 :</font> Pas d'atout 1 <br>";
+	echo "<font color=#C01515 >Atout 2 : </font>".$atout2[$b]."<br>";
+	echo "<font color=#C01515 >Atout 3 : </font>".$atout3[$c]."<br><br>";
 }
 else{
-	echo "Atout 1 : ".$atout1[$a]."<br>";
-	echo "Atout 2 : ".$atout2[$b]."<br>";
-	echo "Atout 3 : ".$atout3[$c]."<br><br>";
+	echo "<font color=#C01515 >Atout 1 : </font>".$atout1[$a]."<br>";
+	echo "<font color=#C01515 >Atout 2 : </font>".$atout2[$b]."<br>";
+	echo "<font color=#C01515 >Atout 3 : </font>".$atout3[$c]."<br><br>";
 }
-echo "Grenade Sp&eacute;ciale : ".$grenade[$h]."<br><br>";
-echo "<p><a href='classgenerator.php'>Reessayer</a></p>";
+echo "<font color=#94540B>Grenade Sp&eacute;ciale : </font>".$grenade[$h]."<br><br>";
+echo "<p><a href='classgenerator.php'>Reessayer</a></p></div>";
 echo "<br><br><br><br><br>NB: attention, ce programme necessitant beaucoup d'exceptions et etant bas&eacute; sur la fonction random, il peut arriver que le programme mette du temps a charger, ne vous inquietez pas, il suffit d'attendre et relancer la page en cas de bug!";
 ?>
 
