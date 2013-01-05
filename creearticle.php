@@ -6,7 +6,7 @@ include("menu.php");
 if (isset($_SESSION['pseudo']) && $_SESSION["pseudo"]=="Admin2"){
 	if (!isset($_POST['titre']) || !isset($_POST['article'])){?>
 	<form method="POST" action="creearticle.php">
-		<div class="article"><h3>Type de l'article : </h3><br><input type="radio" name="typearticle" value="bestiaire"><div class="p1">Bestiaire</div><br>
+		<h3>Type de l'article : </h3><br><div class="article"><input type="radio" name="typearticle" value="bestiaire"><div class="p1">Bestiaire</div><br>
 									<input type="radio" name="typearticle" value="nouveautes"><div class="p1">Nouveaut&eacute;s</div><br><br><br>
 		
 		<div class="p1">Titre : <br><input type="text" name="titre" placeholder="Titre de l'article"></div><br><br>

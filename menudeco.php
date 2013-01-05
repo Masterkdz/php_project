@@ -1,10 +1,4 @@
 <?php
-if (isset($_SESSION['statut']) && $_SESSION['statut']=="admin"){
-	$article="<a href='creearticle.php'><li><img src='img/testcaret.png'>Ecrire un article</li></a>";
-}
-else{
-	$article='';
-}
 echo"
 <nav>
 	<ul>
@@ -16,5 +10,5 @@ echo"
 		<a href='livreor2.php'><li><img src='img/testcaret.png'>Livre d'or</li></a>
 		<a href='contact.php'><li><img src='img/testcaret.png'>Contact</li></a>
 		<a href='pageinscription.php'><li><img src='img/testcaret.png'>Inscrivez-vous</li></a>
-".$article."</ul></nav>";
+		</ul></nav>";
 ?>

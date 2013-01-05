@@ -23,9 +23,14 @@ include("menu.php");
 			<td><input type="TEXT" name="pseudo" placeholder="Pseudo"></td>
 		</tr>
 		<tr>
-		<?php  //si le mot de passe n'est pas renseigné
+		<?php 
+		$taille_min=6;
+		 //si le mot de passe n'est pas renseigné
 				if (isset($_POST['motdepasse']) && $_POST['motdepasse']=='') {
 					echo '<tr><td class="erreur">Veuillez renseigner un mot de passe</td></tr>';
+				}
+				elseif (isset($_POST['motdepasse']) && strlen($_POST['motdepasse'])<6){
+					echo '<tr><td class="erreur">Le mot de passe doit contenir au moins 6 caract&egrave;res</td></tr>';
 				}
 			?>
 			<td>Choisissez un mot de passe : </td>
@@ -67,7 +72,7 @@ else {
 	echo "<p class='centrer'>Inscription Envoy&eacute;e</p><br>";
 	echo "<p class='centrer'><a href='index.php' class='bouton'>Retour a l'accueil</a></p>";
 	$motdepasse=hash("whirlpool","$motdepasse");
-	$sql="INSERT INTO identifiants VALUES ('', '$pseudo','$motdepasse','$email')";
+	$sql="INSERT INTO identifiants VALUES ('', '$pseudo','$motdepasse','$email','utilisateur')";
 	$resultat=qdb($sql);
 }
 
