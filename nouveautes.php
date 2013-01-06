@@ -23,13 +23,13 @@ for($i=$_SESSION['pagenouveautes'];$i<$_SESSION['pagenouveautes']+4;$i++){
 }
 echo"</div>";
 
-$_SESSION['pagenouveautes']=$_SESSION['pagenouveautes']+4;
+/* $_SESSION['pagenouveautes']=$_SESSION['pagenouveautes']+4;
 	if ($_SESSION['pagenouveautes']>1){
     	if($_SESSION['pagenouveautes']>4){
     		$_SESSION['pagenouveautes']=$_SESSION['pagenouveautes']-4;}
     else {$_SESSION['pagenouveautes']=1;
     echo "<a href='nouveautes.php'>Page pr&eacute;c&eacute;dente </a>";}
-}
+} */
 
 
 /* if($_SESSION)['pagenouveautes']</*mysql : compter le nb d'entrées dans la table articlesbestaire  {

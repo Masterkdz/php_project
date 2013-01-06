@@ -12,6 +12,11 @@
 		 . L'avis des joueurs est tr&egrave;s partag&eacute; quant &agrave; cette console : certains la disent 'r&eacute;volutionnaire' , et d'autres restent &agrave; l'&eacute;cart car pour eux la Wii U reste tr&eacute;s proche de l'ancienne version. </p>
 </head>
 <body>
+	&nbsp;<ul style="color:white">
+&nbsp;<li> L'incontournable  <cite> Call of Duty : black ops 2 </cite>, sortie le 13novembre, titre tres attendu par les joueurs. </li>
+&nbsp;<li>     L'immense <cite> Far cry 3  </cite>adulé de toutes les critiques obtenant généralement la note presque maximale, sortie le 29novembre. </li>
+&nbsp;<li>	 Le titre d'ubisoft <cite> Assassin's Creed 3 </cite> également attendu et encencé par les critiques sortie le 22novembre </li>
+
 
 </body>
 </html>

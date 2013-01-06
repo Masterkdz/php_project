@@ -21,14 +21,14 @@ for($i=$_SESSION['pagebestiaire'];$i<$_SESSION['pagebestiaire']+4;$i++){
 	echo "</div><br/>";
 }
 echo "</div>";
-$_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']+4;
+/* $_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']+4;
 	if ($_SESSION['pagebestiaire']>1){
     	if($_SESSION['pagebestiaire']>4){
     		$_SESSION['pagebestiaire']=$_SESSION['pagebestiaire']-4;}
     else {
     	$_SESSION['pagebestiaire']=1;
     echo "<a title='Precedent' href='bestiaire.php'>Page pr&eacute;c&eacute;dente </a>";}
-}
+} */
 
 
 /* if($_SESSION)['pagebestiaire']</*mysql : compter le nb d'entrées dans la table articlesbestaire  {
